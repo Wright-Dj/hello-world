@@ -15,9 +15,9 @@
             </div>
             </a-entity>
       </a-marker>
+      <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .screen"></a-entity>
+      <a-entity laser-controls raycaster="objects: .screen;"></a-entity>
       <a-entity camera>
-        <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .screen"></a-entity>
-        <a-entity laser-controls raycaster="objects: .screen;"></a-entity>
       </a-entity>
     </a-scene>
   </body>
