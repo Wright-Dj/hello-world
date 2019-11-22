@@ -4,11 +4,11 @@
 <script src="js/arjs.min.js"></script>
 <script src="js/arelements.js"></script>
 <script src="js/aframe-htmlembed.min.js"></script>
-  <script>alert(0);</script>
+  <script>alert(1);</script>
   <body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded arjs='debugUIEnabled: false;' vr-mode-ui="enabled: false" cursor="rayOrigin: mouse">
+    <a-scene embedded arjs='debugUIEnabled: false;' vr-mode-ui="enabled: false">
       <a-marker cursor='rayOrigin: mouse' preset="hiro">
-          <a-entity onclick="alert('test');" htmlembed rotation="270 0 0">
+          <a-entity htmlembed rotation="270 0 0">
             <div style="width: 300px;height:300px;background-color:white;">
                 <h1>An Example</h1>
                 <button onclick="alert('pressed');">Press Me</button>
