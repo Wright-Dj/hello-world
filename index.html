@@ -1,11 +1,18 @@
 <!doctype HTML>
 <html>
-<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
-<script src="https://raw.githack.com/jeromeetienne/AR.js/2.0.8/aframe/build/aframe-ar.js"></script>
+<script src="file:///android_asset/js/aframe.min.js"></script>
+<script src="file:///android_asset/js/arjs.min.js"></script>
+<script src="file:///android_asset/js/arelements.js"></script>
+<script src="file:///android_asset/js/aframe-htmlembed.min.js"></script>
   <body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded arjs>
+    <a-scene embedded arjs='debugUIEnabled: false;' vr-mode-ui="enabled: false">
       <a-marker preset="hiro">
-          <a-box position='0 0.5 0' material='color: yellow;'></a-box>
+          <a-entity htmlembed rotation="270 0 0">
+            <div style="width: 300px;height:300px;background-color:white;">
+                <h1>An Example</h1>
+                <button onclick="alert('pressed');">Press Me</button>
+            </div>
+            </a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
